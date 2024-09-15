@@ -22,7 +22,7 @@ func LoadConfig(path, configFile, configType string) (config Config, err error) 
 
 	viper.SetDefault("bot_token", "")
 	viper.SetDefault("admin_user_id", 0)
-	viper.SetDefault("default_locale", "uk-UA")
+	viper.SetDefault("default_locale", "ru-RU")
 	viper.SetDefault("bot_prefix", "🐒")
 
 	viper.AutomaticEnv()
