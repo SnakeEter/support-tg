@@ -257,7 +257,7 @@ func (b *bot) roomStateFunc(update tgbotapi.Update) error {
 		return err
 	}
 
-	// todo: if err == bot was blocked by the user then break the connection
+	// todo: если err == бот был заблокирован пользователем, то разорвите соединение
 
 	err = b.db.messagesIDsDB().set(update.Message.MessageID, rMsg.MessageID)
 	if err != nil {
